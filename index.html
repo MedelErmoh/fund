@@ -5,13 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            <!-- small icon -->
-            <link rel="icon" type="image/icon" href='amo.jpg'>
+     <!-- small icon -->
+    <link rel="icon" type="image/icon" href='amo.jpg'>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <!-- style file -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- animate cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
     <title>Fundraising</title>
   </head>
   <body>
@@ -20,9 +24,9 @@
         <div class="container">
             <div class="container1"></div>
             <div class="container2">
-                <img src="amo.jpg">
-                <h6>FUNDRAISING</h6>
-                <p>Family of Harriet Wambui, cordially invites you to a fundraising, which will be held at our home in Kenyatta road, on 5th October 2019, to raise  fees for Amos, who is pursuing Fullstack course at Moringa school. We invite you to be our special guest.</p>
+                <img class="wow zoomIn" src="amo.jpg">
+                <h6 class="wow lightSpeedIn" data-wow-delay="1s">FUNDRAISING</h6>
+                <p>Family of Harriet Wambui, cordially invites you to a fundraising, which will be held at our home in Kenyatta road, on 5th October 2019, to raise  fees for Amos, who is pursuing Full stack web development course at Moringa school. We invite you to be our special guest.</p>
                 <p>"Let's empore the young to brighten their future."</p>
                 <p>For more info kindly contact us.</p>
             </div>
@@ -40,6 +44,10 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
