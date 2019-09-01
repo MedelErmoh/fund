@@ -1,0 +1,200 @@
+body{
+    background: #1D3557;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container{
+    width: 280px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.container1{
+    width: 100%;
+    height: 70px;
+    background: #E63946;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.container2{
+    width: 100%;
+    height: 420px;
+    background: #edeaea;
+    position: relative;
+    text-align: center;
+}
+
+.container2 img{
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    border-radius: 50%;
+    top: -45px;
+    left: 100px;
+    border: 3px solid #fff;
+    cursor: pointer;
+}
+
+.container2 h6{
+    padding-top: 50px;
+    color: #E63946;
+    font-weight: 900;
+}
+
+.container2 p{
+    padding: 12px 20px 0;
+    font-size: 15px;
+    color: #14151E;
+}
+
+.container3{
+    width: 100%;
+    height: 60px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #edeaea;
+    border-top: 1px solid #E63946;
+}
+
+.container3 .share{
+    height: 50px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+/* contact us button */
+a{
+    position: absolute;
+    color: #fff;
+    background-color: #1D3557;
+    margin-top: 10px;
+    margin-left: 75px;
+    padding: 2px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 11px;
+    text-decoration: none;
+    box-shadow: 0 20px 50px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+a:hover{
+    color: #E63946;
+    text-decoration: none;
+}
+
+a:before
+{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(255,255,255,0.05);
+}
+
+a span:nth-child(1)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #E63946, #1779ff);
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1
+{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+}
+
+a span:nth-child(2)
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #E63946, #1779ff);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+    100%
+    {
+        transform: translateY(100%);
+    }
+}
+
+
+a span:nth-child(3)
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #E63946, #1779ff);
+    animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3
+{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+}
+
+
+a span:nth-child(4)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, #E63946, #1779ff);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate4
+{
+    0%
+    {
+        transform: translateY(100%);
+    }
+    100%
+    {
+        transform: translateY(-100%);
+    }
+}
